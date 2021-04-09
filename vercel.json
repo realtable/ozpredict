@@ -1,0 +1,22 @@
+{
+  "name": "ozpredict",
+  "version": 2,
+  "alias": ["ozpredict.vercel.app"],
+  "github": {
+    "enabled": true
+  },
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "css/*.css", "use": "@vercel/static" },
+    { "src": "js/*.js", "use": "@vercel/static" },
+    { "src": "img/*.svg", "use": "@vercel/static" },
+    { "src": "favicon.ico", "use": "@vercel/static" }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "headers": { "cache-control": "s-maxage=86400" },
+      "dest": "/index.html"
+    }
+  ]
+}
