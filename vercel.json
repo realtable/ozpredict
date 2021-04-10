@@ -1,7 +1,7 @@
 {
   "name": "ozpredict",
   "version": 2,
-  "alias": ["ozpredict.vercel.app"],
+  "alias": [ "ozpredict.com", "www.ozpredict.com" ],
   "github": {
     "enabled": true
   },
